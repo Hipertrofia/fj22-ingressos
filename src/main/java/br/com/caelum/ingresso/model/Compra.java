@@ -15,6 +15,7 @@ public class Compra {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	
 	@OneToMany(cascade = CascadeType.PERSIST)
 	List<Ingresso> ingressos = new ArrayList<>();
 
